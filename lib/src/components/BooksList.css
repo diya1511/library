@@ -25,7 +25,8 @@
   
   /* Add hover effect */
   .book-item:hover {
-    background-color: #f0f0f0;
+    background-color: #000000;
+    color:white;
     cursor: pointer;
   }
   
