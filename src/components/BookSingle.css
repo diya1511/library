@@ -1,0 +1,25 @@
+/* BookSingle.css */
+
+/* Style the book container */
+.book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Style the book content */
+  .book-content {
+    max-width: 600px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .book-content h2 {
+    margin: 0;
+  }
+  
+  .book-content p {
+    margin: 5px 0;
+  }
+  

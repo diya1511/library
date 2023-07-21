@@ -1,0 +1,44 @@
+/* LibrarianDashboard.css */
+
+/* Style the librarian dashboard container */
+.librarian-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Style the add book form */
+  .add-book-form {
+    max-width: 400px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .add-book-form input,
+  .add-book-form textarea {
+    width: 100%;
+    margin: 5px 0;
+  }
+  
+  .add-book-form button {
+    margin-top: 10px;
+  }
+  
+  /* Style the remove book form */
+  .remove-book-form {
+    max-width: 400px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .remove-book-form input {
+    width: 100%;
+    margin: 5px 0;
+  }
+  
+  .remove-book-form button {
+    margin-top: 10px;
+  }
+  

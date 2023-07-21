@@ -1,0 +1,31 @@
+/* BooksList.css */
+
+/* Style the list container */
+.books-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Style each book item */
+  .book-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    max-width: 400px;
+  }
+  
+  .book-item h3 {
+    margin: 0;
+  }
+  
+  .book-item p {
+    margin: 5px 0;
+  }
+  
+  /* Add hover effect */
+  .book-item:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
