@@ -12,8 +12,8 @@ const getBookById = async (req, res) => {
 
 const getBooks = async (req, res) => {
   try {
-    const books = await books.find({ isAvailable: true });
-    res.json(books);
+    const book = await books.find({ isAvailable: true });
+    res.json(book);
   } catch (error) {
     res.status(500).json({ message: 'Failed to fetch books.', error });
   }
@@ -52,7 +52,26 @@ const removeBook = async (req, res) => {
   }
 };
 
-const editBook = (req, res) => {};
+const editBook = async (req, res) => {
+  const { id } = req.params;
+  const { title, author, genres, excerpt, content } = req.body;
+
+  try {
+    const book = await books.findByIdAndUpdate(
+      id,
+      { title, author, genres, excerpt, content },
+      { new: true } // Return the updated book
+    );
+
+    if (!book) {
+      return res.status(404).json({ message: 'Book not found.' });
+    }
+
+    res.json(book);
+  } catch (error) {
+    res.status(500).json({ message: 'Failed to update book.', error });
+  }
+};
 
 module.exports = {
   getBooks,
